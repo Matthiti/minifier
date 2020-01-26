@@ -1,1 +1,1 @@
-# minimizer
+# minifier
