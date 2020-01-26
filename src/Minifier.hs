@@ -1,4 +1,4 @@
-module Minimizer where
+module Minifier where
 
 minimizeFile :: FilePath -> IO String
 minimizeFile f = minimize <$> readFile f

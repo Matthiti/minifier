@@ -1,4 +1,4 @@
-module MinimizeParser where
+module MinifyParser where
 
 import Data.Either
 import Data.List

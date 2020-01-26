@@ -1,16 +1,10 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.31.2.
---
--- see: https://github.com/sol/hpack
---
--- hash: 025eeaae4263ea1a7c0623478b7e97c7e1997e27a22e349393492694ddbf5e58
-
-name:           minimizer
+name:           minifier
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/Matthiti/minimizer#readme>
-homepage:       https://github.com/Matthiti/minimizer#readme
-bug-reports:    https://github.com/Matthiti/minimizer/issues
+description:    Please see the README on GitHub at <https://github.com/Matthiti/minifier#readme>
+homepage:       https://github.com/Matthiti/minifier#readme
+bug-reports:    https://github.com/Matthiti/minifier/issues
 author:         Matthijs Roelink
 maintainer:     matthijs@roelink.eu
 copyright:      2020 Matthijs Roelink
@@ -23,13 +17,13 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/Matthiti/minimizer
+  location: https://github.com/Matthiti/minifier
 
 library
   exposed-modules:
       Lib
   other-modules:
-      Paths_minimizer
+      Paths_minifier
   hs-source-dirs:
       src
   build-depends:
@@ -37,27 +31,27 @@ library
       parsec
   default-language: Haskell2010
 
-executable minimizer-exe
+executable minifier-exe
   main-is: Main.hs
   other-modules:
-      Paths_minimizer
+      Paths_minifier
   hs-source-dirs:
       app
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , minimizer
+    , minifier
   default-language: Haskell2010
 
-test-suite minimizer-test
+test-suite minifier-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Paths_minimizer
+      Paths_minifier
   hs-source-dirs:
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , minimizer
+    , minifier
   default-language: Haskell2010
