@@ -11,4 +11,4 @@ reservedWords = ["abstract", "boolean", "byte", "char", "class", "double", "enum
     ++ keywordsAtom ++ keywords
 
 operators :: [String]
-operators = []
+operators = ["in", "instanceof", "typeof", "new", "void", "delete", "++", "--", "+", "-", "!", "~", "&", "|", "^", "*", "/", "%", ">>", "<<", ">>>", "<", ">", "<=", ">=", "==", "===", "!=", "!==", "?", "=", "+=", "-=", "/=", "*=", "%=", ">>=", "<<=", ">>>=", "|=", "^=", "&=", "&&", "||"]
