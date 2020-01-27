@@ -31,9 +31,3 @@ parseSource = parse statements "(unknown)"
 
 parseSourceFile :: FilePath -> IO (Either ParseError [String])
 parseSourceFile f = parseSource <$> readFile f
-
-fromLeft :: Either a b -> a
-fromLeft (Left x) = x
-
-fromRight :: Either a b -> b
-fromRight (Right x) = x
